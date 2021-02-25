@@ -1,0 +1,91 @@
+.cards-container {
+  background-color: #609ba0;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-title {
+  margin: 20px 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+.card-wrapper {
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  background-color: white;
+  text-align: center;
+  font-family: sans-serif;
+  border: 2px solid #78a7a8;
+  border-radius: 10px;
+}
+
+.card-header {
+  height: 150px;
+  background-color: #49aa1c;
+}
+
+.card-content {
+  padding: 0 20px 20px;
+}
+
+.photo-wrapper {
+  --user-photo-size: 100px;
+  width: var(--user-photo-size);
+  height: var(--user-photo-size);
+  margin: calc(var(--user-photo-size) / -2) auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.photo-wrapper:hover {
+  --user-photo-size: 150px;
+  border: 2px solid #316cff;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+.user-card-name {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.card-small-text {
+  opacity: 0.5;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.card-follow-button {
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 1px solid rgba(201, 201, 201, 0.5);
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 3px;
+}
+
+.card-follow-button:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 8px 15px;
+  color: white;
+  background-color: #4cb454;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
